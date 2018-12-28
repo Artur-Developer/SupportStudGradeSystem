@@ -1,0 +1,24 @@
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+RewriteEngine on
+RewriteRule ^(.+)?$ /backend/web/$1
+
+## Если запрос начинается с /admin, то заменяем на /backend/web/
+#RewriteCond %{REQUEST_URI} ^/*
+#RewriteRule  . ./backend/web/index.php
+#
+## Если frontend запрос
+#RewriteCond %{REQUEST_URI} ^/frontend/web
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /backend/web/index.php
+#
+## Если backend запрос
+#RewriteCond %{REQUEST_URI} ^/backend/web
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /backend/web/index.php
+#
+#RewriteRule . ./backend/web/index.php
