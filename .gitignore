@@ -33,6 +33,7 @@ phpunit.phar
 /.vagrant
 
 /vagrant
+/vagrant2
 /vendor2
 /yii
 /yii_test
