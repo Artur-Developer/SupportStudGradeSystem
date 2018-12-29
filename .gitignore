@@ -4,9 +4,7 @@
 /yii_test.bat
 
 # phpstorm project files
-.idea
-
-# netbeans project files
+.idea# netbeans project files
 nbproject
 
 # zend studio for eclipse project files
@@ -33,3 +31,17 @@ phpunit.phar
 
 # vagrant runtime
 /.vagrant
+
+/vagrant
+/vendor2
+/yii
+/yii_test
+/yii_test.bat
+nbproject
+.buildpath
+.project
+.settings
+Thumbs.db
+/vendor
+composer.phar
+/phpunit.xml
